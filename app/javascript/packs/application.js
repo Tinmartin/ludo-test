@@ -9,5 +9,5 @@
 
   document.addEventListener("DOMContentLoaded", (event) => {
     // puts your Materialize initializers here!
-    M.toast({html: "Exemple of Materialize component", displayLength: 5000});
+    // M.toast({html: "Exemple of Materialize component", displayLength: 5000});
   });
