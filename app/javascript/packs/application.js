@@ -12,7 +12,22 @@
     // M.toast({html: "Exemple of Materialize component", displayLength: 5000});
   });
 function refresh() {
-  location.reload();
+  // location.reload();
+  fetch("https://ludo-test-rails.herokuapp.com/test")
+  .then(response => response.json())
+  .then((data) => {
+    data.forEach(function(trigger) {
+      const trigId = `trig-${trigger.id}`;
+      const btn = document.getElementById(trigId);
+      if (trigger.state === 1) {
+        btn.classList.add('green')
+        btn.classList.remove('materialize-red')
+      } else {
+        btn.classList.add('materialize-red')
+        btn.classList.remove('green')
+      }
+    });
+  });
 }
 
 setInterval(refresh, 500);
