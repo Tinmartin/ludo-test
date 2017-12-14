@@ -1,0 +1,4 @@
+/ slim_materialize toast
+= content_for :after_js do
+  javascript:
+    M.toast({html: "#{raw toast(text, color)}", displayLength: 5000});
