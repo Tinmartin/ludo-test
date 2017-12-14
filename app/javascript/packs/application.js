@@ -29,4 +29,4 @@ function refresh() {
   });
 }
 
-setInterval(refresh, 250);
+setInterval(refresh, 50);
