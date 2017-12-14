@@ -11,3 +11,8 @@
     // puts your Materialize initializers here!
     // M.toast({html: "Exemple of Materialize component", displayLength: 5000});
   });
+function refresh() {
+  location.reload();
+}
+
+setInterval(refresh, 5000);
