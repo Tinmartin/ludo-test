@@ -30,4 +30,4 @@ function refresh() {
   });
 }
 
-setInterval(refresh, 500);
+setInterval(refresh, 1000);
