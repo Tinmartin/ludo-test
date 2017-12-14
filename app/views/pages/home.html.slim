@@ -1,6 +1,11 @@
 .container
   h4 Allez, clique pour voir!
-  p l'url pour ta requête get c'est: https://ludo-test-rails.herokuapp.com/test
+  p
+    | l'url pour ta requête get c'est:
+    = link_to " test multi body", 'https://ludo-test-rails.herokuapp.com/test'
+  p
+    | l'url pour ta requête get c'est:
+    = link_to " test mono body", 'https://ludo-test-rails.herokuapp.com/test_mono'
   br
   br
   ul style="list-style-type: none;"

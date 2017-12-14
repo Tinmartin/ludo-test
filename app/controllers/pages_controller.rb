@@ -10,6 +10,10 @@ class PagesController < ApplicationController
     render json: @triggers
   end
 
+  def test_mono
+    render json: Trigger.first
+  end
+
   def change_state
     @trigger = Trigger.find(params[:id])
     state = @trigger.state
