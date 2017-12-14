@@ -12,7 +12,6 @@
     // M.toast({html: "Exemple of Materialize component", displayLength: 5000});
   });
 function refresh() {
-  // location.reload();
   fetch("https://ludo-test-rails.herokuapp.com/test")
   .then(response => response.json())
   .then((data) => {
@@ -30,4 +29,4 @@ function refresh() {
   });
 }
 
-setInterval(refresh, 1000);
+setInterval(refresh, 250);
