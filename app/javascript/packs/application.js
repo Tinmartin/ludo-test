@@ -29,4 +29,13 @@ function refresh() {
   });
 }
 
-setInterval(refresh, 50);
+const triggers = document.querySelectorAll('.trigger')
+triggers.forEach(function(trigger) {
+  trigger.addEventListener('click', function(event) {
+    console.log(trigger);
+    refresh();
+  });
+});
+
+
+// setInterval(refresh, 50);
