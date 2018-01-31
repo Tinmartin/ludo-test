@@ -32,7 +32,6 @@ function refresh() {
 const triggers = document.querySelectorAll('.trigger')
 triggers.forEach(function(trigger) {
   trigger.addEventListener('click', function(event) {
-    console.log(trigger);
     trigger.classList.toggle('green');
     trigger.classList.toggle('materialize-red');
   });
