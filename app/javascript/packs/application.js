@@ -38,4 +38,4 @@ triggers.forEach(function(trigger) {
 });
 
 
-// setInterval(refresh, 50);
+setInterval(refresh, 50);
