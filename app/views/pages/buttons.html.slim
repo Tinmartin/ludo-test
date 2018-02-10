@@ -1,4 +1,11 @@
 #app
+  ul
+    - for i in (1..5) do
+      - line = "line_#{i}"
+      li id="#{line}"
+        - for j in (1..5) do
+          .btn-container
+            .button class=" #{['walk', 'idle'].sample}" id="#{line}_btn_#{j}"
 
 = content_for :after_js
   = javascript_pack_tag 'buttons'
