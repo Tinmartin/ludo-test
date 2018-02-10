@@ -6,11 +6,10 @@
   p
     | l'url pour ta requête get c'est:
     = link_to " test mono body", 'https://ludo-test-rails.herokuapp.com/test_mono'
-  br
-  br
-
-  .container
-    .img-container#char
+  p
+    | la page des boutons:
+    = link_to " ICI", buttons_path
+  .img-container#char
 
   ul style="list-style-type: none;"
     - @triggers.each do |trigger|
