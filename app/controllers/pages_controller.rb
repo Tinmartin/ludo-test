@@ -1,11 +1,13 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!
-  before_action :set_triggers
+  before_action :set_triggers, only: :home
 
   def home
-    gon.triggers = @triggers
-    @trigger = Trigger.first
-    gon.watch.trigger = @trigger
+    gon.triggers = @triggers.first(5)
+  end
+
+  def buttons
+
   end
 
   def test
