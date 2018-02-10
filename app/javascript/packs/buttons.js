@@ -1,7 +1,7 @@
 const app = document.getElementById('app');
 colors = ['materialize-red', 'green']
 color = colors[Math.floor(Math.random() * colors.length)]
-const btn = `<i class="button ${color} medium menu_icon material-icons waves-effect z-depth-2">
+const btn = `<i class="button ${color} medium menu_icon material-icons waves-effect">
                 ac_unit
               </i>`
 const classes = 'btn-container center-align'
