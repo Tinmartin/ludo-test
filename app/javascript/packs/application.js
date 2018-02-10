@@ -18,6 +18,13 @@ function refresh() {
     data.forEach(function(trigger) {
       const trigId = `trig-${trigger.id}`;
       const btn = document.getElementById(trigId);
+      if (trigger.id === 1) {
+        if (trigger.state === 1) {
+          char.style.backgroundImage = "url('https://res.cloudinary.com/coryandre/image/upload/v1518258450/walk_color_512_uxmwpn.gif')"
+        } else {
+          char.style.backgroundImage = "url('https://res.cloudinary.com/coryandre/image/upload/v1518258433/idle_color_512_vw3eud.gif')"
+        }
+      }
       if (trigger.state === 1) {
         btn.classList.add('green')
         btn.classList.remove('materialize-red')
@@ -36,6 +43,9 @@ triggers.forEach(function(trigger) {
     trigger.classList.toggle('materialize-red');
   });
 });
+
+const char = document.getElementById('char');
+console.log(char.style);
 
 
 setInterval(refresh, 50);

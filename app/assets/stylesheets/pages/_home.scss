@@ -1,1 +1,9 @@
 // Specific CSS for your home-page
+.img-container {
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  background-image: url('https://res.cloudinary.com/coryandre/image/upload/v1518258433/idle_color_512_vw3eud.gif');
+  background-size: cover;
+  background-position: center center;
+}

@@ -4,6 +4,8 @@ class PagesController < ApplicationController
 
   def home
     gon.triggers = @triggers
+    @trigger = Trigger.first
+    gon.watch.trigger = @trigger
   end
 
   def test

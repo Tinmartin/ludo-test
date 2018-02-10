@@ -8,6 +8,10 @@
     = link_to " test mono body", 'https://ludo-test-rails.herokuapp.com/test_mono'
   br
   br
+
+  .container
+    .img-container#char
+
   ul style="list-style-type: none;"
     - @triggers.each do |trigger|
       - classname = trigger.state == 0 ? "materialize-red" : "green"
