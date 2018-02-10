@@ -47,4 +47,4 @@ triggers.forEach(function(trigger) {
 
 const char = document.getElementById('char');
 
-// setInterval(refresh, 50);
+setInterval(refresh, 50);
