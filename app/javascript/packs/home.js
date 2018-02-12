@@ -33,6 +33,5 @@ triggers.forEach(function(trigger) {
 
 const char = document.getElementById('char');
 
-if (triggers.length > 0) {
-  setInterval(refreshTriggers, 50);
-}
+
+setInterval(refreshTriggers, 50);
