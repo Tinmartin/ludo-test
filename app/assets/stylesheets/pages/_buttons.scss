@@ -4,9 +4,7 @@ body {
 
 #app {
   width: 100%;
-  height: 100%;
-  background-color: grey;
-  padding-top: 10%;
+  height: 90%;
   ul {
     width: 100%;
     height: 100%;
@@ -30,15 +28,34 @@ body {
         .idle {
           background: image-url("idle_color_512.gif") no-repeat;
         }
+        .nuclear {
+          background: image-url("nuclear.gif") no-repeat;
+        }
+        .dragon-ball {
+          background: image-url("dragon_ball.gif") no-repeat;
+        }
         .button {
           background-position: center center;
           background-size: cover;
-          border: 4px solid grey;
+          // border: 4px solid grey;
           border-radius: 10%;
           margin: auto 0;
           vertical-align: middle;
           width: 50px;
           height: 50px;
+          position: relative;
+          .counter {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            color: green;
+            font-weight: bold;
+            background-color: white;
+            border: 2px solid green;
+            border-radius: 50%;
+            padding: 0px 5px;
+          }
         }
       }
     }

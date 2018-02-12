@@ -5,7 +5,10 @@
       li id="#{line}"
         - for j in (1..5) do
           .btn-container
-            .button class=" #{['walk', 'idle'].sample}" id="#{line}_btn_#{j}"
+            - btn_class = ['dragon-ball', 'nuclear', 'walk', 'idle'].sample
+            .button class=" #{btn_class}" id="#{line}_btn_#{j}"
+              - if (btn_class == "dragon-ball") || (btn_class == "nuclear")
+                .counter 0
 
 = content_for :after_js
   = javascript_pack_tag 'buttons'
