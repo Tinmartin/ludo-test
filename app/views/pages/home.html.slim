@@ -16,6 +16,6 @@
       - classname = trigger.state == 0 ? "materialize-red" : "green"
       li
         = link_to trigger.name, "#{trigger.id}/change_state", remote: true, class: "btn hoverable lighten-2 trigger #{classname}", id: "trig-#{trigger.id}"
-/ 
-/ = content_for :after_js
-/   = javascript_pack_tag 'home'
+
+= content_for :after_js
+  = javascript_pack_tag 'home'
