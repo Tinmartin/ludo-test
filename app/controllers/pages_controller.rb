@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!
+  before_action :set_triggers, only: [:home, :test]
 
   def home
     @triggers = Trigger.all.order(:id)
